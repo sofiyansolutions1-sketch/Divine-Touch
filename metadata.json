@@ -1,0 +1,6 @@
+{
+  "name": "Divine Touch Outcall Spa Center",
+  "description": "Explore spa and wellness services from Divine Touch in Indore, Madhya Pradesh. Contact us on WhatsApp or call to enquire about services, pricing and appointment availability.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

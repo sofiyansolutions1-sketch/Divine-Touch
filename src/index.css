@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --color-purple-deep: #4c1d95;
+  --color-purple-primary: #6b21a8;
+  --color-purple-vivid: #7c3aed;
+  --color-purple-soft: #f5f3ff;
+  --color-purple-light: #ede9fe;
+  --color-purple-border: #ddd6fe;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #faf8fd;
+  color: #1e1b4b;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-serif {
+  font-family: var(--font-serif);
+}
