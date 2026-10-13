@@ -232,7 +232,7 @@ export const BookingInquiryForm: React.FC<BookingInquiryFormProps> = ({ business
 
         {/* Footnote */}
         <p className="text-[11px] text-slate-400 text-center italic pt-1">
-          Direct communication: Opens WhatsApp to message the admin at +91 7389996090.
+          Direct communication: Opens WhatsApp to message the admin at {business.phoneDisplay}.
         </p>
       </form>
     </div>

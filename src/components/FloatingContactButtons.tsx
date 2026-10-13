@@ -15,7 +15,7 @@ export const FloatingContactButtons: React.FC<FloatingContactButtonsProps> = ({ 
 
   return (
     <div
-      className="fixed right-4 sm:right-6 bottom-20 sm:bottom-8 z-50 flex flex-col items-end gap-3 pointer-events-auto"
+      className="fixed right-4 sm:right-6 bottom-6 sm:bottom-8 z-50 flex flex-col items-end gap-3 pointer-events-auto"
       onMouseEnter={() => setShowTooltip(true)}
       onMouseLeave={() => setShowTooltip(false)}
     >

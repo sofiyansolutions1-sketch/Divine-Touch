@@ -12,7 +12,6 @@ import { FaqSection } from './components/FaqSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { FloatingContactButtons } from './components/FloatingContactButtons';
-import { MobileStickyBar } from './components/MobileStickyBar';
 import { LegalModal, LegalModalType } from './components/LegalModal';
 import { OwnerConfigModal } from './components/OwnerConfigModal';
 import {
@@ -29,7 +28,18 @@ export default function App() {
     try {
       const saved = localStorage.getItem('divine_touch_business_config');
       if (saved) {
-        return { ...initialBusinessConfig, ...JSON.parse(saved) };
+        const parsed = JSON.parse(saved);
+        if (parsed.phone && parsed.phone.includes('7389996090')) {
+          parsed.phone = initialBusinessConfig.phone;
+          parsed.phoneDisplay = initialBusinessConfig.phoneDisplay;
+          parsed.whatsapp = initialBusinessConfig.whatsapp;
+          parsed.whatsappDisplay = initialBusinessConfig.whatsappDisplay;
+        }
+        if (parsed.name && parsed.name.includes('Outcall')) {
+          parsed.name = initialBusinessConfig.name;
+        }
+        localStorage.setItem('divine_touch_business_config', JSON.stringify(parsed));
+        return { ...initialBusinessConfig, ...parsed };
       }
     } catch {
       // Fallback
@@ -72,7 +82,7 @@ export default function App() {
       />
 
       {/* Main Content Sections */}
-      <main className="flex-1 pb-16 sm:pb-0">
+      <main className="flex-1">
         {/* Section B: Hero Banner */}
         <Hero business={business} />
 
@@ -114,9 +124,6 @@ export default function App() {
 
       {/* Floating WhatsApp and Phone Buttons */}
       <FloatingContactButtons business={business} />
-
-      {/* Mobile Sticky Contact Bar */}
-      <MobileStickyBar business={business} />
 
       {/* Legal Information Modal */}
       <LegalModal

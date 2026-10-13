@@ -1,14 +1,14 @@
 import { BusinessConfig, SpaService, Testimonial, FaqItem, ServiceArea } from '../types';
 
 export const initialBusinessConfig: BusinessConfig = {
-  name: "Divine Touch Outcall Spa Center",
+  name: "Divine Touch Spa Center",
   tagline: "Relax, Refresh & Rejuvenate with Divine Touch",
   category: "Spa and Wellness Services",
   serviceModel: "Outcall spa services across verified Indore locations",
-  phone: "+917389996090",
-  phoneDisplay: "+91 7389996090",
-  whatsapp: "917389996090",
-  whatsappDisplay: "+91 7389996090",
+  phone: "+919082303724",
+  phoneDisplay: "+91 9082303724",
+  whatsapp: "919082303724",
+  whatsappDisplay: "+91 9082303724",
   city: "Indore",
   state: "Madhya Pradesh",
   country: "India",
@@ -147,7 +147,7 @@ export const defaultFaqs: FaqItem[] = [
   {
     id: "faq-1",
     question: "How can I book a spa service?",
-    answer: "Booking is simple and direct: click any 'Book on WhatsApp' or 'Call Now' button to contact our coordinator at +91 7389996090. We will discuss your preferred treatment, preferred time, and confirm availability before finalizing your appointment.",
+    answer: "Booking is simple and direct: click any 'Book on WhatsApp' or 'Call Now' button to contact our coordinator at +91 9082303724. We will discuss your preferred treatment, preferred time, and confirm availability before finalizing your appointment.",
   },
   {
     id: "faq-2",
@@ -157,7 +157,7 @@ export const defaultFaqs: FaqItem[] = [
   {
     id: "faq-3",
     question: "How can I find out the prices?",
-    answer: "Send us a quick WhatsApp message or call +91 7389996090. We will gladly share transparent pricing for individual treatments, session durations (60/90/120 mins), and package options with no hidden fees.",
+    answer: "Send us a quick WhatsApp message or call +91 9082303724. We will gladly share transparent pricing for individual treatments, session durations (60/90/120 mins), and package options with no hidden fees.",
   },
   {
     id: "faq-4",

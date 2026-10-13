@@ -23,8 +23,8 @@ export const Hero: React.FC<HeroProps> = ({ business }) => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
           
-          {/* Left Column: Headlines & High-Converting CTAs */}
-          <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
+          {/* Left Column: Headlines & High-Converting CTAs (order-2 on mobile, order-1 on desktop) */}
+          <div className="order-2 lg:order-1 lg:col-span-7 space-y-6 text-center lg:text-left">
             
             {/* Locality Tag */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-100/80 border border-purple-200 text-purple-900 text-xs font-semibold tracking-wide">
@@ -99,8 +99,8 @@ export const Hero: React.FC<HeroProps> = ({ business }) => {
 
           </div>
 
-          {/* Right Column: Real Luxury Photographic Spa Showcase */}
-          <div className="lg:col-span-5 relative">
+          {/* Image Showcase (order-1 on mobile so it displays at the top, order-2 on desktop) */}
+          <div className="order-1 lg:order-2 lg:col-span-5 relative">
             <div className="relative rounded-3xl overflow-hidden border-2 border-purple-200 shadow-2xl bg-purple-100 aspect-[4/3] lg:aspect-[5/4] group">
               {imgLoaded ? (
                 <img

@@ -29,7 +29,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ business }) => {
                   <p className="text-purple-700 font-medium">Serving Indore Clients</p>
                 </div>
                 <span className="text-purple-900 font-bold bg-purple-50 px-2.5 py-1 rounded-full border border-purple-200">
-                  +91 7389996090
+                  {business.phoneDisplay}
                 </span>
               </div>
             </div>
@@ -43,7 +43,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ business }) => {
             </div>
 
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight leading-tight text-balance">
-              Welcome to Divine Touch Outcall Spa Center
+              Welcome to {business.name}
             </h2>
 
             <div className="space-y-4 text-sm sm:text-base text-slate-600 leading-relaxed font-normal">

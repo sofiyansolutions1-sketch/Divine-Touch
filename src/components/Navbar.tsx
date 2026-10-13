@@ -53,7 +53,7 @@ export const Navbar: React.FC<NavbarProps> = ({ business, onOpenOwnerConfig }) =
                 Divine Touch
               </span>
               <span className="hidden sm:block text-[11px] font-semibold text-purple-600 uppercase tracking-wider">
-                Outcall Spa Center • Indore
+                Spa Center • Indore
               </span>
             </div>
           </a>

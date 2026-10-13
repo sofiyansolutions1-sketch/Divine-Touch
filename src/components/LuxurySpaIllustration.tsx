@@ -348,7 +348,7 @@ export const LuxurySpaIllustration: React.FC<LuxurySpaIllustrationProps> = ({ ty
 
           <div className="border-t border-[#c5a059]/15 pt-4 flex items-center justify-between text-xs text-[#cfcac0]">
             <span>Dedicated Outcall Service</span>
-            <span className="text-[#c5a059] font-medium">+91 7389996090</span>
+            <span className="text-[#c5a059] font-medium">+91 9082303724</span>
           </div>
         </div>
       );
